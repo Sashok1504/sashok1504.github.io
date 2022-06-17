@@ -2,15 +2,15 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Foogle</title>
-		<link rel="icon" type="image/ico" href="favicon.ico"/>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<title>Foogle - Your Own Search Engine</title>
+		<link rel="icon" type="image/ico" href="assets/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 	</head>
 	<body>
 		<div class="wrapper indexPage">
 			<div class="mainSection">
 				<div class="logoContainer">
-					<img src="foogleLogo.png"/>
+					<img src="assets/images/foogleLogo.png"/>
 				</div>
 				<div class="searchContainer">
 					<form action="search.php" method="GET">
@@ -24,7 +24,10 @@
 			</div>
 		</div>
 		<footer>
-			o1
+			<?php
+				require 'functions/util.php';
+				printCountry();
+			?>
 		</footer>
 	</body>
 
